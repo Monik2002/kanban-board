@@ -8,11 +8,11 @@ import doneIcon from '../../Assets/Images/Done.svg';
 import todoIcon from '../../Assets/Images/To-do.svg';
 import cancelIcon from '../../Assets/Images/Cancelled.svg';
 import backlogIcon from '../../Assets/Images/Backlog.svg';
-import highpriorityIcon from '../../Assets/Images/Img - High priority.svg';
-import mediumpriorityIcon from '../../Assets/Images/Img - Medium priority.svg';
-import lowpriorityIcon from '../../Assets/Images/Img - Low priority.svg';
+import highpriorityIcon from '../../Assets/Images/Img-Highpriority.svg';
+import mediumpriorityIcon from '../../Assets/Images/Img-Mediumpriority.svg';
+import lowpriorityIcon from '../../Assets/Images/Img-Lowpriority.svg';
 import nopriorityIcon from '../../Assets/Images/No-priority.svg';
-import urgentprioritygreyIcon from '../../Assets/Images/SVG - Urgent Priority grey.svg';
+import urgentprioritygreyIcon from '../../Assets/Images/SVG-UrgentPriority-grey.svg';
 
 interface CardDetails {
   id: number;
