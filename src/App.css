@@ -24,3 +24,16 @@
   width: fit-content;
   display: flex;
 }
+
+
+.user-card {
+  display: flex;
+   align-items: baseline;;
+  margin: 10px 0; 
+  margin-left: 10px;
+}
+
+.user-card > .list-title {
+  margin-left: 10px;
+}
+

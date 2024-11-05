@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import List from './Components/List/List';
 import Navbar from './Components/Navbar/Navbar';
+import CardProfile from './Components/CardProfile/CardProfile';
 
 interface User {
   id: number;
@@ -78,6 +79,7 @@ function App() {
 
   const statusList = useMemo(() => ['In progress', 'Backlog', 'Todo', 'Done', 'Cancelled'], []);
   const userList = useMemo(() => ['Anoop Sharma', 'Yogesh', 'Shankar Kumar', 'Ramesh', 'Suresh'], []);
+
   const priorityList: Priority[] = useMemo(() => [
     { name: 'No priority', priority: 0 },
     { name: 'Low', priority: 1 },
@@ -104,14 +106,21 @@ function App() {
               ticketDetails={ticketDetails}
             />
           ))}
-          {groupValue === 'user' && userList.map((listItem) => (
-            <List
-              key={listItem}
-              groupValue='user'
-              listTitle={listItem}
-              ticketDetails={ticketDetails}
-            />
-          ))}
+          {groupValue === 'user' && userList.map((listItem) => {
+            const user = ticketDetails.find(ticket => ticket.userObj.name === listItem); // Find the corresponding user data
+
+            return (
+              <div key={listItem} className="user-card">
+                <CardProfile name={listItem} available={user ? user.userObj.available : false} />
+                <List
+                  key={listItem}
+                  groupValue='user'
+                  listTitle={listItem}
+                  ticketDetails={ticketDetails}
+                />
+              </div>
+            );
+          })}
           {groupValue === 'priority' && priorityList.map((listItem) => (
             <List
               key={listItem.priority}
