@@ -2,7 +2,7 @@ import React from 'react';
 import './List.css';
 import Card from '../Card/Card';
 import AddIcon from '../../Assets/Images/Add.svg';
-import threedotIcon from '../../Assets/Images/3 dot menu.svg';
+import threedotIcon from '../../Assets/Images/3-dot-menu.svg';
 import inProgressIcon from '../../Assets/Images/in-progress.svg';
 import doneIcon from '../../Assets/Images/Done.svg';
 import todoIcon from '../../Assets/Images/To-do.svg';
