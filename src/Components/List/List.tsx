@@ -8,9 +8,9 @@ import doneIcon from '../../Assets/Images/Done.svg';
 import todoIcon from '../../Assets/Images/To-do.svg';
 import cancelIcon from '../../Assets/Images/Cancelled.svg';
 import backlogIcon from '../../Assets/Images/Backlog.svg';
-import highpriorityIcon from '../../Assets/Images/Img-Highpriority.svg';
-import mediumpriorityIcon from '../../Assets/Images/Img-Mediumpriority.svg';
-import lowpriorityIcon from '../../Assets/Images/Img-Lowpriority.svg';
+import highpriorityIcon from '../../Assets/Images/Img-HighPriority.svg';
+import mediumpriorityIcon from '../../Assets/Images/Img-MediumPriority.svg';
+import lowpriorityIcon from '../../Assets/Images/Img-LowPriority.svg';
 import nopriorityIcon from '../../Assets/Images/No-priority.svg';
 import urgentprioritygreyIcon from '../../Assets/Images/SVG-UrgentPriority-grey.svg';
 
